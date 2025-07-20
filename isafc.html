@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ISAFC - Agricultura Sostenible</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1600672081949-4bdb01ec24b4') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+
+    }
+
+    header {
+      background-color: rgba(34, 139, 34, 0.9);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav button {
+      background-color: #228B22;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      margin: 5px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    nav button:hover {
+      background-color: #006400;
+    }
+
+    section {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(34, 139, 34, 0.9);
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+<img src="empresa.jpg" alt="Plátano circular" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 8px rgba(0,0,0,0.2);">       <p>Innovación Sostenible en Agricultura Familiar y Cultivos</p>
+  </header>
+
+  <nav>
+    <button onclick="mostrar('inicio')">Inicio</button>
+    <button onclick="mostrar('nosotros')">Nosotros</button>
+    <button onclick="mostrar('cultivos')">Cultivos</button>
+    <button onclick="mostrar('contacto')">Contacto</button>
+    <button onclick="mostrar('Biogracultivos')">Biogracultivos</button>
+<a href="platano.html"><button>Ver Cultivo de Plátano</button></a>
+
+  </nav>;
+<nav>
+
+<label> <a href="file:///C:/Users/auram/OneDrive/Desktop/isafc/platano.html/"> IR a Google </a> </label>
+
+<label> <a></a> IR a YouTube </label>
+
+<label> <a></a>IIR a Stean </label>
+
+</nav>
+
+
+  <section id="contenido">
+    <h2>Bienvenidos a ISAFC</h2>
+    <p>Promovemos la agricultura sostenible, ecológica y familiar en armonía con la naturaleza.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ISAFC - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    function mostrar(seccion) {
+      let contenido = document.getElementById('contenido');
+      if (seccion === 'inicio') {
+        contenido.innerHTML = `
+          <h2>Bienvenidos a ISAFC</h2>
+          <p>Promovemos la agricultura sostenible, ecológica y familiar en armonía con la naturaleza.</p>
+        `;
+      } else if (seccion === 'nosotros') {
+        contenido.innerHTML = `
+          <h2>Sobre Nosotros</h2>
+          <p>ISAFC es una iniciativa creada para apoyar a pequeños agricultores mediante el uso de prácticas sostenibles y tecnología agrícola.</p>
+        `;
+      } else if (seccion === 'cultivos') {
+        contenido.innerHTML = `
+          <h2>Nuestros Cultivos</h2>
+          <ul>
+            <li>Plátano</li>
+            <li>Café</li>
+            <li>Maíz</li>
+            <li>Frutas tropicales</li>
+          </ul>
+        `;
+      } else if (seccion === 'contacto') {
+        contenido.innerHTML = `
+          <h2>Contacto</h2>
+          <p>Correo: lobofabian055@gmail.com.org</p>
+          <p>Teléfono: +57 3225027474</p>
+          <p>Ubicación: Zona rural, tierralta cordoba, Colombia</p>
+        `;
+      }
+    }
+  </script>
+</body>
+</html>
